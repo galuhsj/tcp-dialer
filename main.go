@@ -70,7 +70,7 @@ func main() {
 
 			// send email when dialing error
 			if errorMsg != "" {
-				utils.SendEmail(config.EmailReceiver, "Pinger Error Subject", errorMsg, "Pinger Error Header", config.SMTP)
+				utils.SendEmail(config.EmailReceiver, "TCP Dialer", errorMsg, "TCP Dialer", config.SMTP)
 			}
 		}
 
